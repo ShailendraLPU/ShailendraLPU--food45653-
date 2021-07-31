@@ -1,0 +1,150 @@
+.main {
+  min-width: 100%;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+}
+.glass {
+  min-height: 400px;
+  width: 350px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  backdrop-filter: blur(2rem);
+}
+
+.glass:hover {
+  transition: all 0.8s;
+  transform-style: preserve-3d;
+
+  transform: scale(1.04);
+}
+
+@media screen and (min-width: 800px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+}
+.imgsize {
+  height: 300px;
+  width: 300px;
+}
+.color {
+  background: linear-gradient(to right top, #14213d, #14213d);
+  color: white;
+}
+
+.btncolor {
+  border: none;
+  background-color: #f94144;
+  font-size: 1.1rem;
+  color: white;
+}
+.btncolor:hover {
+  background-color: #f94144;
+  color: white;
+}
+
+.btnshape {
+  background-color: #f94144;
+  margin: 0 0.5rem;
+  border-radius: 25px;
+  padding: 0.2rem 0.6rem;
+  font-size: 1.5rem;
+}
+
+.btnshape:hover {
+  border: 0.5px solid white;
+}
+
+.imglanding {
+  margin: 0px 0px;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1612700722193-f0410adb8949?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  min-height: 87.8vh;
+  opacity: 0.9;
+  color: white;
+}
+
+.signUpcolor {
+  background-color: #14213d;
+  color: white;
+}
+#basic-nav-dropdown {
+  color: white;
+}
+.imgsignup {
+  width: 100%;
+  height: 542px;
+  box-shadow: 1px -2px 2px 3px#14213d;
+  border-radius: 25px;
+}
+
+.formCorner {
+  box-shadow: 1px 2px 2px 3px grey;
+  border-radius: 25px;
+}
+
+.cartBtn {
+  background-color: #14213d;
+  border: none;
+}
+
+.cartImage {
+  width: 200px;
+  height: 200px;
+}
+
+.cartColor {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+.btnPayment {
+  background-color: #2dc653;
+  color: white;
+}
+
+.btnPayment:hover {
+  background-color: #2dc653;
+}
+
+.addItems {
+  background-color: #4895ef;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.addItemBtn {
+  font-size: 1.1rem;
+  border: none;
+  width: 200px;
+}
+
+.footer {
+  background-color: #457b9d;
+  color: white;
+}
+
+.fvrtBtn:hover {
+  background-color: none;
+  border: none;
+  /* color: red; */
+}
