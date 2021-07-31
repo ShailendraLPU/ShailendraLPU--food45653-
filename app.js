@@ -8,6 +8,7 @@ const mongoose = require("mongoose");
 const expressSession = require("express-session");
 const passport = require("passport");
 const passportLocalStrategy = require("passport-local");
+const path = require("path");
 const seed = require("./seed");
 const User = require("./models/user");
 const authroute = require("./routes/auth");
@@ -45,6 +46,12 @@ app.use(authroute);
 app.use(foodRoutes);
 app.use(coupanRoutes);
 
+if (process.env.NODE_ENV == "production") {
+  app.use(express.static(path.resolve(process.cwd(), "fronted", "build")));
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(process.cwd(), "fronted", "build", "index.html"));
+  });
+}
 app.listen(process.env.PORT || 8080, () => {
   console.log("Server Listening");
 });
